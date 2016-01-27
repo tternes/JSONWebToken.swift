@@ -7,4 +7,3 @@ script:
 - set -o pipefail
 - git submodule update --init --recursive
 - xcodebuild -workspace JWT.xcworkspace -scheme JWT test -sdk macosx | xcpretty -c
-- pod lib lint
